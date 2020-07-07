@@ -15,16 +15,13 @@ function palindrum(word) {
     stri2 = word;
     array2 = stri2.split('');
     array2.reverse();
-
-    console.log(array1);
+    
+    array2 = array2.join("")
+    console.log(word);
     console.log(array2)
 
-    final = JSON.stringify(array1) === JSON.stringify(array2) ? console.log('palindrum') : console.log('not palindrum')
-
-  return
-
-
-
+    final = word === array2 ? console.log('palindrum') : console.log('not palindrum')
+return
 }
 
 console.log(palindrum('madam'))
